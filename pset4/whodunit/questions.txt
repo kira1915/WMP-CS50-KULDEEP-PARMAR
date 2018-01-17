@@ -1,0 +1,12 @@
+1.  The <stdint.h> shall decalre set of integers types having specified widths, and shall define corres[onding sets of marcos.
+2.  It makes clear that you intend to use data in a specific way.
+3.  1,4,4,2
+4.  The first two bytes of a BMP is a word and denotes bfType, which specifies the file type. It must be set to the signature word BM(0*4D42).
+5.  bfSize specifies the size ,in bytes, of bitmap file. biSize spcefies the size of the structure in bytes.
+6.  If biHeight is negative , the bitmap is a top-down DIB and its origin is the upper left corner.
+7.  The biBitCount of the BITMAPFOHEADER structure determines the number of bits that define each pixel and the maximum number of the color of bitmap.
+8.  fopen will return NULL if it cannot create the outfile to erite to.
+9.  I think it is because the program is reading in 1 RGB triple at a time. The header coments seem to confirm.
+10. biWidth is the width of the bitmap in pixels. If the width is 3, padding is necessary since the scanline must be a multiple of 4.
+11. Skips over any padding and look for the next pixel (RGB triple).
+12. This is an integer constant in which, when used as the as the argument to the fseek or fseeko function, specifies that he offset provided is relative to the current file position.
